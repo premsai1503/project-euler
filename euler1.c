@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 static unsigned long total;
 
@@ -13,13 +14,13 @@ int main(void)
   for(unsigned int j = 1; j < 1000; j++){
 
     if(j%5==0 && j%3!=0){
-      total  = total + j;
+      total  += j; //total
     }else{
-      total = total + 0;
+      total = total;
     }
   }
 
-  printf("Project Euler problem 1 solution = ");
+  printf("Project Euler problem 1 solution is ");
   printf("%lu \n", total);
 
   return 0;
