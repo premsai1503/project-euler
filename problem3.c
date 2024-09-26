@@ -18,6 +18,10 @@ main()
             {
                 b=i;
             }
+            else if(a != 0)
+            {
+                break;
+            }
         }
       
     }
