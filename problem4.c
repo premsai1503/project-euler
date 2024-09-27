@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+
 
 static int is_palindrome(const unsigned long in) {
     unsigned long r = 0;
@@ -18,6 +20,9 @@ int main(int argc, char* argv[]) {
             if(is_palindrome(a*b)) {
                 _a = a, _b = b, _m = a*b, a_min = _m / max + 1;
                 break;
+            }
+            else{
+                printf("this is for formality");
             }
     printf("Biggest palindrome-number which is product of two natural numbers"
         " no bigger than %lu: %lu = %lu * %lu\n", max, _m, _a, _b);
